@@ -1,6 +1,6 @@
 CC = g++
 EXEC = emis
-OBJS = main.o managerview_console_impl.o manager.o managerservice_impl.o tools.o managerdao_file_impl.o serviceview_console_impl.o department.o employee.o service_impl.o servicedao_file_impl.o
+OBJS = src/main.o src/managerview_console_impl.o src/manager.o src/managerservice_impl.o src/tools.o src/managerdao_file_impl.o src/serviceview_console_impl.o src/department.o src/employee.o src/service_impl.o src/servicedao_file_impl.o
 all: $(EXEC)
 $(EXEC): $(OBJS)
 	$(CC) -o $@ $^
